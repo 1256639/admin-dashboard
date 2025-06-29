@@ -1,3 +1,42 @@
-p {
-    color: red;
+/* Resets some browser settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: auto 1fr;
+    height: 100vh;
+}
+
+.sidebar {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+    background-color: #1E90FF;
+    color: white;
+    /* Helps visualise grid area, will delete later */
+    border: 2px solid black;
+}
+
+.header {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    background-color: #f8f9fa;
+    /* Helps visualise grid area, will delete later */
+    border: 2px solid red;
+}
+
+.main-content {
+    grid-column: 2 / 3;
+    grid-row:  2 / 3;
+    background-color: #e9ecef;
+    /* Helps visualise grid area, will delete later */
+    border: 2px solid green;
 }
