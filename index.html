@@ -5,24 +5,226 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&family=Roboto:wght@400;700&family=Courier+New&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Main container -->
-    <div class="container">
-        <!-- Sidebar -->
-        <div class="sidebar">
-            <p>I'm the SIDEBAR</p>
+    <header>
+        <div id="head">
+            <form action="#">
+                <label for="search">
+                    <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                </label>
+                <input type="text" name="search" id="search" placeholder="Search...">
+            </form>
+            <div id="account">
+                <a><i class="fa-regular fa-bell"></i></a>
+                <div id="image">
+                    <img src="images/piratelogo.jpg" alt="Profile_picture">
+                </div>
+                <p>Pirate</p>
+            </div>
+        </div>
+        <div id="bottom">
+            <div id="profile">
+                <div id="image">
+                    <img src="images/piratelogo.jpg">
+                </div>
+                <div id="text">
+                    <p id="greet">Hi there,</p>
+                    <p id="name">Pirate (@m8e)</p>
+                </div>
+            </div>
+            <div id="buttons">
+                <button>New</button>
+                <button>Upload</button>
+                <button>Share</button>
+            </div>
+        </div>
+    </header>
+    <div class="sidebar">
+        <div class="logo">
+            <span><i class="fa-brands fa-linux"></i></span>
+            <h1>Dashboard</h1>
         </div>
 
-        <!-- Header -->
-        <div class="header">
-            <p>I'm the HEADER</p>
-        </div>       
-
-        <!-- Content -->
-        <div class="main-content">
-            <p>I'm the CONTENT</p>
+        <div class="middle">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span><i class="fa-solid fa-house"></i></span>
+                        <p>Home</p>
+                    </a>               
+                </li>
+                <li>
+                    <a href="#">
+                        <span><i class="fa-solid fa-address-card"></i></span>
+                        <p>Profile</p>
+                    </a>                   
+                </li>
+                <li>
+                    <a href="#">
+                        <span><i class="fa-solid fa-message"></i></span>
+                        <p>Messages</p>
+                    </a>                   
+                </li>
+                <li>
+                    <a href="#">
+                        <span><i class="fa-solid fa-clock-rotate-left"></i></span>
+                    <p>History</p>
+                    </a>                   
+                </li>
+                <li>
+                    <a href="#">
+                        <span><i class="fa-solid fa-list-check"></i></span>
+                        <p>Tasks</p>
+                    </a>                   
+                </li>
+                <li>
+                    <a href="#">
+                        <span><i class="fa-solid fa-users"></i></span>
+                        <p>Communities</p>
+                    </a>                   
+                </li>
+            </ul>
+        </div>
+        <div class="last-sec">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span><i class="fa-solid fa-gear"></i></span>
+                        <p>Settings</p>
+                    </a>                  
+                </li>
+                <li>
+                    <a href="#">
+                        <span><i class="fa-solid fa-circle-info"></i></span>
+                        <p>Support</p>
+                    </a>                  
+                </li>
+                <li>
+                    <a href="#">
+                        <span><i class="fa-solid fa-shield"></i></span>
+                        <p>Privacy</p>
+                    </a>                   
+                </li>
+            </ul>
         </div>
     </div>
+    <main>
+        <div class="content">
+            <div class="projects">
+                <h3>Topics</h3>
+                <div class="cards">
+                    <div class="card">
+                        <h5>Topic 1</h5>
+                        <p>Message</p>
+                        <div class="icons">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-eye"></i>
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h5>Topic 2</h5>
+                        <p>Message</p>
+                        <div class="icons">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-eye"></i>
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h5>Topic 3</h5>
+                        <p>Message</p>
+                        <div class="icons">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-eye"></i>
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h5>Topic 4</h5>
+                        <p>Message</p>
+                        <div class="icons">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-eye"></i>
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h5>Topic 5</h5>
+                        <p>Message</p>
+                        <div class="icons">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-eye"></i>
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h5>Topic 6</h5>
+                        <p>Message</p>
+                        <div class="icons">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-eye"></i>
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="announcements">
+                <h3>Announcements</h3>
+                <ul class="temp">
+                    <li class="sec">
+                        <h5>Announcement 1</h5>
+                        <p>Message</p>
+                    </li>
+                    <li class="sec">
+                        <h5>Announcement 2</h5>
+                        <p>Message</p>
+                    </li>
+                    <li class="sec">
+                        <h5>Announcement 3</h5>
+                        <p>Message</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="trend">
+                <h3>Trending</h3>
+                <div class="avatars">
+                    <ul class="accounts">
+                        <li>
+                            <img src="images/piratelogo.jpg" alt="trend_pic_1">
+                            <div class="names">
+                                <p>&#64;user1</p>
+                                <p>Coming soon</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/piratelogo.jpg" alt="trend_pic_2">
+                            <div class="names">
+                                <p>&#64;user2</p>
+                                <p>Coming soon</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/piratelogo.jpg" alt="trend_pic_3">
+                            <div class="names">
+                                <p>&#64;user3</p>
+                                <p>Coming soon</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/piratelogo.jpg" alt="trend_pic_4">
+                            <div class="names">
+                                <p>&#64;user4</p>
+                                <p>Coming soon</p>
+                            </div>
+                        </li>                   
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
