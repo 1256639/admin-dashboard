@@ -366,12 +366,17 @@ main {
     display: flex;
     gap: 10px;
     align-items: center;
-    padding: 1em 0;
+    /*padding: 1em 0;*/
+    margin-bottom: 1em;
 }
 
-.trend .accounts li:first-child {
-    padding: 0;
+.trend .accounts li:last-child {
+    margin-bottom: 0;
 }
+
+/*.trend .accounts li:first-child {
+    padding: 0;
+}*/
 
 .trend .accounts p:nth-of-type(1) {
     font-weight: 500;
